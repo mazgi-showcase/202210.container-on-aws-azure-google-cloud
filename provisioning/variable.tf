@@ -1,14 +1,5 @@
 variable "project_unique_id" {}
 
-variable "allowed_ipaddr_list" {
-  type    = list(string)
-  default = ["127.0.0.1/8"]
-}
-
-variable "base_dnsdomain" {
-  default = "example.dev"
-}
-
 # <AWS>
 variable "aws_default_region" {
   default = "us-east-1"
